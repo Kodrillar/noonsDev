@@ -1,0 +1,105 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="An imaginary technology bootcamp website."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/378222c687.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>NoonsDev</title>
+  </head>
+  <body>
+    <header>
+      <!-- WEBSITE LOGO -->
+      <nav class="nav container">
+        <p id="logo">N<span class="colorizer">oo</span>nsDev</p>
+
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="/">Home</a></li>
+          <li class="nav__item nav__dropdown-button">Services</li>
+          <li class="nav__item nav__dropdown-button">Courses</li>
+          <li class="nav__item">Contact</li>
+          <li class="nav__item">Company</li>
+        </ul>
+
+        <!-- <ul class="list">
+          <li class="list__item">Home</li>
+          <li class="list__item">Services</li>
+          <li class="list__item">Courses</li>
+          <li class="list__item">Contact</li>
+          <li class="list__item">Company</li>
+        </ul> -->
+
+        <div class="icon-container">
+          <i class="fa-solid fa-bars icon icon--primary"></i>
+          <!-- <i class="fa-solid fa-xmark icon icon--primary"></i> -->
+        </div>
+
+        <button class="nav__button btn btn--primary">Let's Talk</button>
+      </nav>
+    </header>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1 class="hero__tagline container">
+        Learn in-demand Tech Skills <span class="colorizer">With Ease</span>
+      </h1>
+      <p class="hero__text container">
+        We train you to become a top-notch tech expert.
+      </p>
+      <button class="btn btn--primary">Let's Talk</button>
+
+      <img
+        class="hero__image"
+        src="./assets/svgs/noonsdev_hero.svg"
+        alt="An animated tech illustration"
+      />
+    </section>
+
+    <!-- <script>
+      document
+        .querySelectorAll(".nav__dropdown-button")
+        .forEach((navDropdownButton) => {
+          navDropdownButton.addEventListener("mouseover", function (event) {
+            this.classList.add("rotate");
+          });
+          navDropdownButton.addEventListener("mouseleave", function (event) {
+            this.classList.remove("rotate");
+          });
+        });
+    </script> -->
+
+    <!-- <script>
+      onscroll = function (event) {
+        const navBar = document.querySelector(".nav");
+        if (window.scrollY > navBar.scrollTop) {
+          navBar.style.position = "fixed";
+          navBar.style.width = "100vw";
+          navBar.style.height = "90px";
+          navBar.style.background = "white";
+          // navBar.style.marginLeft = auto;
+          // navBar.style.marginRight = auto;
+          navBar.style.top = "0";
+          navBar.style.zIndex = 9999;
+          navBar.style.boxShadow = "0 5px 30px var(--gradient-color)";
+        } else {
+          navBar.style.position = "relative";
+          navBar.style.width = "100vw";
+          navBar.style.background = "";
+          navBar.style.boxShadow = "";
+        }
+      };
+    </script> -->
+  </body>
+</html>

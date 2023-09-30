@@ -1,0 +1,286 @@
+/*-------------------------------------------------------*/
+/*---------------------- GENERAL ------------------------*/
+/*-------------------------------------------------------*/
+
+:root{
+    --primary-color:#4359F5;
+    --content-color:#6E718E;
+    --gradient-color:#4358f544;
+    --dark-color:   #000;
+    --padding: 15px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: poppins , Arial, Helvetica, sans-serif;
+    color: var(--content-color);
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: var(--content-color)
+}
+
+
+/*-------------------------------------------------------*/
+/*---------------------- UTILITIES ----------------------*/
+/*-------------------------------------------------------*/
+
+.colorizer{
+    color: var(--primary-color); 
+    font-weight: bold;
+} 
+
+.container{
+    max-width: 1242px;
+    padding: 0 var(--padding);
+    margin: 0 auto;
+}
+
+@media screen  and (min-width: 1024px){
+
+    .container{
+      padding: 0 calc(var(--padding) * 2);
+
+    }
+}
+
+/*-------------------------------------------------------*/
+/*---------------------- HEADINGS -----------------------*/
+/*-------------------------------------------------------*/
+
+h1, h2{
+    color: var(--primary-color);
+}
+
+h1{
+    font-size: 4rem;
+    margin-bottom: 1.8rem;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+
+}
+
+h3{
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+
+@media screen  and (min-width: 1024px){
+
+    h1{
+        font-size: 6rem;
+    }
+}
+
+/*-------------------------------------------------------*/
+/*---------------------- LIST ---------------------------*/
+/*-------------------------------------------------------*/
+
+
+.list{
+    list-style: none;
+}
+
+
+/*-------------------------------------------------------*/
+/*---------------------- NAV ----------------------------*/
+/*-------------------------------------------------------*/
+
+.nav {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .15s ease-in-out;
+}
+
+#logo{
+    font-size: 2.5rem;
+    color: var(--dark-color);
+}
+
+.nav__button{
+    display: none;
+    text-wrap: nowrap;
+}
+
+.nav__list{
+    display: none;
+  
+}
+
+
+.nav__item{
+    margin-right: 3rem;
+    text-wrap: nowrap;
+    
+}
+
+.nav__item , .nav__item > a{
+    color: var(--dark-color);
+    transition: color .2s;
+}
+
+.nav__item:hover, .nav__item > a:hover{
+    color: var(--primary-color);  
+}
+
+.nav__dropdown-button::after{
+    display: inline-block;
+    margin-left: .8rem;
+    width: 2rem;   
+    content: url(../assets/svgs/chevron-down-solid.svg);
+    fill: red;
+    color: red;
+    transition: all .5s;
+}
+
+.nav__dropdown-button:hover::after{
+    transform: rotate(180deg);
+}
+
+
+@media screen and (min-width:1024px) {
+    .nav__button{
+        display: initial;
+     
+    }
+
+    .nav__list{
+        display: flex;
+    }
+    
+}
+
+
+/*-------------------------------------------------------*/
+/*---------------------- ICON ---------------------------*/
+/*-------------------------------------------------------*/
+
+.icon{
+    font-size: 30px;
+}
+
+.icon--primary{
+    color: var(--primary-color);
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 5px 30px var(--gradient-color); 
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+@media screen and (min-width: 1024px) {
+    .icon-container{
+        display: none;
+    }
+    
+}
+
+
+/*-------------------------------------------------------*/
+/*---------------------- BUTTONS ------------------------*/
+/*-------------------------------------------------------*/
+
+
+
+.btn{
+    padding: 2rem 2.8rem;
+    font-weight: bold;
+    border-radius: 20px 20px 0 20px;
+    border: none
+}
+
+.btn--primary{
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.8rem;
+}
+
+
+
+/*-------------------------------------------------------*/
+/*---------------------- HERO ---------------------------*/
+/*-------------------------------------------------------*/
+
+.hero{
+    position: relative;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 72rem;
+    background: linear-gradient(to bottom, transparent 75%, var(--gradient-color));
+}
+
+.hero__tagline{
+    text-align: center;
+    color: black;
+    margin-bottom: 2rem;
+    transition: all .15s ease-in-out;
+}
+
+.hero__text{
+    text-align: center;
+    padding-bottom: 3rem;
+
+}
+
+
+.hero__image{
+    position: absolute;
+    bottom: 0; 
+    z-index: -99;
+   
+}   
+
+
+@media screen and (min-width: 768px) {
+
+    .hero__tagline{
+         padding: 0 15rem;
+    }
+
+    .hero__image{
+        height: 40rem;
+    }
+
+    .hero{
+        height: 75rem;
+    }
+    
+}
+
+
+@media screen and (min-width: 1024px){
+
+    .hero > .btn{
+        display: none;
+    }
+    
+}
+
