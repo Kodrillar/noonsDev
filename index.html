@@ -28,20 +28,99 @@
 
         <ul class="list nav__list">
           <li class="nav__item"><a href="/">Home</a></li>
-          <li class="nav__item nav__dropdown-button">Services</li>
-          <li class="nav__item nav__dropdown-button">Courses</li>
-          <li class="nav__item">Contact</li>
+          <li class="nav__item">Services</li>
+          <li class="nav__item">
+            <p class="nav__dropdown-button">Courses</p>
+
+            <section class="nav__dropdown container--shadow">
+              <section class="option">
+                <p class="option__name container--shadow">Web development</p>
+                <p class="option__name">Mobile App development</p>
+              </section>
+
+              <section class="option__details">
+                <section class="option__detail option__detail-web option--show">
+                  <!-- DROPDOWN_ITEM_1-->
+                  <article class="dropdown__item">
+                    <article
+                      class="dropdown__image container--border"
+                    ></article>
+                    <section class="dropdown__texts">
+                      <p class="dropdown__title">JavaScript</p>
+                      <p class="dropdown__subtitle">
+                        Learn the language of the Web and how it aids Web
+                        interctivity.
+                      </p>
+                    </section>
+                  </article>
+
+                  <!-- DROPDOWN_ITEM_2-->
+                  <article class="dropdown__item">
+                    <article
+                      class="dropdown__image container--border"
+                    ></article>
+                    <section class="dropdown__texts">
+                      <p class="dropdown__title">HTML</p>
+                      <p class="dropdown__subtitle">
+                        Learn the language of the Web and how it aids Web
+                        interctivity.
+                      </p>
+                    </section>
+                  </article>
+
+                  <!-- DROPDOWN_ITEM_3-->
+                  <article class="dropdown__item">
+                    <article
+                      class="dropdown__image container--border"
+                    ></article>
+                    <section class="dropdown__texts">
+                      <p class="dropdown__title">CSS</p>
+                      <p class="dropdown__subtitle">
+                        Learn the language of the Web and how it aids Web
+                        interctivity.
+                      </p>
+                    </section>
+                  </article>
+                </section>
+                <section class="option__detail option__detail-mobile">
+                  <!-- DROPDOWN_ITEM_1-->
+                  <article class="dropdown__item">
+                    <article
+                      class="dropdown__image container--border"
+                    ></article>
+                    <section class="dropdown__texts">
+                      <p class="dropdown__title">Dart</p>
+                      <p class="dropdown__subtitle">
+                        Learn the language powering the Flutter framework.
+                      </p>
+                    </section>
+                  </article>
+
+                  <!-- DROPDOWN_ITEM_2-->
+                  <article class="dropdown__item">
+                    <article
+                      class="dropdown__image container--border"
+                    ></article>
+                    <section class="dropdown__texts">
+                      <p class="dropdown__title">Flutter</p>
+                      <p class="dropdown__subtitle">
+                        Learn the Google's cross-platform kit for building
+                        applications.
+                      </p>
+                    </section>
+                  </article>
+                </section>
+              </section>
+            </section>
+          </li>
+          <li class="nav__item">
+            <p class="nav__dropdown-button">Contact</p>
+            <section class="nav__dropdown container--shadow">
+              <a href="#" class="nav__link">About Us</a>
+            </section>
+          </li>
           <li class="nav__item">Company</li>
         </ul>
-
-        <!-- <ul class="list">
-          <li class="list__item">Home</li>
-          <li class="list__item">Services</li>
-          <li class="list__item">Courses</li>
-          <li class="list__item">Contact</li>
-          <li class="list__item">Company</li>
-        </ul> -->
-
         <div class="icon-container">
           <i class="fa-solid fa-bars icon icon--primary"></i>
           <!-- <i class="fa-solid fa-xmark icon icon--primary"></i> -->
@@ -67,18 +146,7 @@
       />
     </section>
 
-    <!-- <script>
-      document
-        .querySelectorAll(".nav__dropdown-button")
-        .forEach((navDropdownButton) => {
-          navDropdownButton.addEventListener("mouseover", function (event) {
-            this.classList.add("rotate");
-          });
-          navDropdownButton.addEventListener("mouseleave", function (event) {
-            this.classList.remove("rotate");
-          });
-        });
-    </script> -->
+    <script src="./js/script.js"></script>
 
     <!-- <script>
       onscroll = function (event) {
