@@ -59,7 +59,7 @@ a{
 }
 
 .container--shadow{
-    border-radius: 2.5rem;
+    border-radius: 2rem;
     background-color: white;
     border: 2px solid var(--primary-color-light);
     box-shadow: 0 1rem 4rem .7rem var(--primary-color-light) ;
@@ -503,6 +503,61 @@ h3{
     .stat__text{
         margin-left: 2rem;
         font-size: 1.2rem;
+    }
+    
+}
+
+
+
+/* --------------------------------------------------- */
+/* ------------------- EXPERIENCE -------------------- */
+/* --------------------------------------------------- */
+
+.experience__heading{
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.experience{
+    margin: 8rem auto;
+   
+}
+
+.experience__items{
+    row-gap: 6rem;
+}
+
+.experience__item{
+    padding: 2.5rem;
+    min-width: 23rem;
+
+}
+
+.experience__image{
+    height: 9.5rem;
+    margin-bottom: 1.4rem;
+}
+
+.experience__title{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+
+    .experience__title{
+        font-size: 2.2rem;
+      
+    }
+    
+}
+
+@media screen and (min-width:1024px) {
+
+    .experience__items.grid--col-2{
+        grid-template-columns: 0.5fr 0.5fr;
+        column-gap: 6rem;
     }
     
 }
