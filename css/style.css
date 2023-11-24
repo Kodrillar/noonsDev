@@ -1,5 +1,5 @@
 /*-------------------------------------------------------*/
-/*---------------------- GENERAL ------------------------*/
+/*-------------------- GENERAL SETUP --------------------*/
 /*-------------------------------------------------------*/
 
 :root{
@@ -10,6 +10,7 @@
     --padding: 15px;
     --primary-color-light:#4358f520;
     --primary-color-light-100:#4358f50b;
+    --font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -24,16 +25,20 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    font-family: Poppins , Arial, Helvetica, sans-serif;
+body, textarea, input{
+    font-family: var(--font-family);
+    font-size: 1.8rem;
     color: var(--content-color);
-    font-size: 2rem;
     line-height: 1.5;
 }
 
 a{
     text-decoration: none;
     color: var(--content-color)
+}
+
+::selection{
+    background-color: var(--accent-color);
 }
 
 
@@ -393,3 +398,48 @@ h3{
     
 }
 
+
+/* --------------------------------------------------- */
+/* ---------------------- MISSION -------------------- */
+/* --------------------------------------------------- */
+
+.mission{
+    margin-top: 6rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+
+.mission__subtitle{
+    margin: 1.5rem 0;
+
+}
+
+
+@media screen and (min-width:768px) {
+
+    .mission__subtitle{
+      padding: 0 5%;
+    }
+
+  .mission__image {
+    height: 65rem;
+  }
+    
+}
+
+@media screen and (min-width:1024px) {
+    
+      .mission__image {
+        height: 40rem;
+        grid-column-start: 1;
+        grid-row-start: 1;
+      }
+
+     .mission.grid--col-2{
+        grid-template-columns: 0.5fr 0.5fr;
+    
+      }
+
+     
+}
