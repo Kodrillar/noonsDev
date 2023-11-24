@@ -6,6 +6,7 @@
     --primary-color:#4359F5;
     --content-color:#6E718E;
     --gradient-color:#4358f544;
+    --accent-color: #4358f546;
     --dark-color:   #000;
     --padding: 15px;
     --primary-color-light:#4358f520;
@@ -442,4 +443,66 @@ h3{
       }
 
      
+}
+
+
+/* --------------------------------------------------- */
+/* ---------------------- STAT ----------------------- */
+/* --------------------------------------------------- */
+
+.stats{
+    margin-top: 5rem;
+}
+
+.stats__title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.stat__item{
+    display: flex;
+    flex-direction: column;
+   margin-top: 3rem;
+}
+
+.stat__image{
+    height: 7rem;
+    width: 7rem;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.stat__title{
+    color: var(--primary-color);
+}
+
+.stat__subtitle{
+    width:  75%;
+}
+
+
+@media screen and (min-width:768px) {
+
+    .stats__title{
+      padding: 0 2%
+    }
+
+    .stat__items.grid--col-3{
+        grid-template-columns: .34fr .33fr .33fr;
+    }
+
+    .stat__image{
+        min-width: 7rem;
+    }
+
+    .stat__item{
+        flex-direction: row;
+    
+    }
+    .stat__text{
+        margin-left: 2rem;
+        font-size: 1.2rem;
+    }
+    
 }
