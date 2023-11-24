@@ -561,3 +561,32 @@ h3{
     }
     
 }
+
+
+/* --------------------------------------------------- */
+/* ---------------------- ALUMNI --------------------- */
+/* --------------------------------------------------- */
+
+.alumni{
+    margin-bottom: 8rem;
+}
+.alumni__title{
+    font-size: 2rem;
+}
+.alumni__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.alumni__company{
+    margin: 4rem 4rem 0 0;
+    height: 3rem;
+}
+
+@media screen and (min-width:768px) {
+    
+    .alumni__content{
+     flex-direction: initial;
+    }
+    
+}
