@@ -10,8 +10,9 @@
     --solid-dark-color: black;
     --solid-light-color: white;
     --padding: 15px;
-    --primary-color-light:#4358f520;
+    --primary-color-light:#4358f521;
     --primary-color-light-100:#4358f50b;
+    --button-shadow: 0 0.5rem 3rem 0.2rem var(--accent-color);
     --font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -61,7 +62,7 @@ a{
 
 .container--shadow{
     border-radius: 2rem;
-    background-color: white;
+    background-color: var(--solid-light-color);
     border: 2px solid var(--primary-color-light);
     box-shadow: 0 1rem 4rem .7rem var(--primary-color-light) ;
 }
@@ -149,6 +150,7 @@ h3{
     background-color: var(--primary-color);
     color: var(--solid-light-color);
     font-size: 1.8rem;
+    box-shadow: var(--button-shadow);
 }
 
 .btn--light{
@@ -716,3 +718,62 @@ h3{
     }
 
  }
+
+
+
+/* --------------------------------------------------- */
+/* --------------------- CONTACT --------------------- */
+/* --------------------------------------------------- */
+
+.contact{
+    margin-top: 15rem;
+    row-gap: 4rem;
+}
+
+.contact__text p:first-of-type {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.contact__text{
+    text-align: center;
+}
+
+.contact__form{
+    padding: 3.5rem;
+}
+
+.contact__form input[type='text'], input[type='email'], textarea{
+        width: 100%;
+        outline: none;
+        border: 1.5px solid var(--primary-color-light);
+        border-radius: 4rem;
+        padding: 2rem;
+}
+
+.form__group + .form__group  {   
+     margin-top: 2.5rem;
+}
+
+.form__group > textarea{
+    padding: 5rem 2rem  ;
+}
+
+.contact__form .btn{
+    margin-top: 3rem;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .contact__text{
+        margin-right: 2rem;
+        text-align: unset;
+        align-self: center;
+    }
+
+    .contact.grid--col-2{
+        grid-template-columns: .5fr .5fr;
+    }
+    
+}
