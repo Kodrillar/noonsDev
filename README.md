@@ -6,7 +6,7 @@ An imaginary technology bootcamp website.
 
 This website is written in HTML, CSS and Vanilla JavaScript.
 
-<img width="700" alt="NoonsDev Mockup" src="https://github.com/aitech-ng/plemuz-mobile/assets/67793558/2f7f44a1-5667-4b89-9362-6bbbec127416">
+<img width="700" alt="NoonsDev Mockup" src="https://github.com/Kodrillar/noonsDev/assets/67793558/a0c0d56f-84d3-4198-8ae3-27a1a398fe2f">
 
 ## Design
 
@@ -20,14 +20,14 @@ The project uses a simple project structure to segregate the important web techn
 
 `/components`: This folder contains abstracted UI components used in designing the website. <br>
 
-`/css`: This is the centrall directory that contains the stylesheet used in designing the website. <br>
+`/css`: This is the central directory that contains the stylesheet used in designing the website. <br>
 
 `/js`: This folder contains the scripts written in JavaScript for the website's functionalities. <br>
 
 ## Attributions
 
-`Images:` The images used for this project were gotten from Freepik.
-`Icons:` The icons used for this project were gotten from fontawesome.com.
+`Images:` The images used for this project were gotten from Freepik. <br>
+`Icons:` The icons used for this project were gotten from fontawesome.com. <br>
 
 ### Freepik Publishers
 
