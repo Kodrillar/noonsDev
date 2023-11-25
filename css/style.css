@@ -662,3 +662,57 @@ h3{
     }
     
 }
+
+
+
+/* --------------------------------------------------- */
+/* -------------------- ADMISSION -------------------- */
+/* --------------------------------------------------- */
+
+.admission{
+    margin-top: 8rem;
+    text-align: center;
+}
+
+.admission__text{
+    margin-top: 2rem;
+}
+
+.admission__items{
+    display: flex;
+    flex-direction: column;
+}
+
+.admission__item{
+    margin: 5rem 1.8rem 0 1.8rem;
+    
+}
+
+.admission__title{
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.admission__image{
+    height: 9.5rem;
+}
+
+
+@media screen and (min-width:768px) {
+   .admission__subtitle{
+        padding: 0 15%;
+   }
+    
+}
+
+@media screen and (min-width:1024px) {
+
+    .admission__items{  
+        flex-direction: initial;   
+    }
+
+    .admission__subtitle{
+         padding: initial
+    }
+
+ }
