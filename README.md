@@ -31,10 +31,10 @@ The project uses a simple project structure to segregate the important web techn
 
 ### Freepik Publishers
 
-![Image by Upklyak](https://www.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_10798281.htm#query=techie&position=17&from_view=search&track=sph)
+[Image by Upklyak](https://www.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_10798281.htm#query=techie&position=17&from_view=search&track=sph)
 
-![Image by Macrovector](https://www.freepik.com/free-vector/male-programmer-glasses-working-computer-his-office-flat-vector-illustration_23579814.htm#page=2&query=vector%20cartoon%20computer&position=17&from_view=search&track=ais)
+[Image by Macrovector](https://www.freepik.com/free-vector/male-programmer-glasses-working-computer-his-office-flat-vector-illustration_23579814.htm#page=2&query=vector%20cartoon%20computer&position=17&from_view=search&track=ais)
 
-![Image by Storyset](https://www.freepik.com/free-vector/completed-steps-concept-illustration_13317062.htm#from_view=detail_alsolike)
+[Image by Storyset](https://www.freepik.com/free-vector/completed-steps-concept-illustration_13317062.htm#from_view=detail_alsolike)
 
-![Image by pch.vector](https://www.freepik.com/free-vector/female-student-listening-webinar-online_9175118.htm#query=computer%20teacher%20vector&position=4&from_view=search&track=ais)
+[Image by pch.vector](https://www.freepik.com/free-vector/female-student-listening-webinar-online_9175118.htm#query=computer%20teacher%20vector&position=4&from_view=search&track=ais)
