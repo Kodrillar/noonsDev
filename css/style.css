@@ -67,11 +67,11 @@ a{
     box-shadow: 0 1rem 4rem .7rem var(--primary-color-light) ;
 }
 
-/* .container--border{
+.container--border{
     border-radius: 2.5rem;
     background-color: var(--primary-color-light-100);
     border: 2px solid var(--primary-color-light);
-} */
+}
 
 .grid{
     display: grid;
@@ -776,4 +776,74 @@ h3{
         grid-template-columns: .5fr .5fr;
     }
     
+}
+
+
+/* --------------------------------------------------- */
+/* ---------------------- FAQS ----------------------- */
+/* --------------------------------------------------- */
+
+
+.faq__background{
+    background-color: var(--primary-color);
+    margin: 12rem auto;
+    padding: 5rem 0;
+}
+
+.faq__title{
+    color: var(--solid-light-color);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.faq__item{
+    background-color: var(--solid-light-color);
+    border-radius: 2rem;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+.faq__question{
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+}
+
+.faq__answer{
+    margin-top: .7rem;
+}
+
+.faq__dropdown.grid--col-2{
+    grid-template-columns: 1fr .1fr;
+}
+
+.faq__button{
+    justify-self: end;
+    align-self: center;
+    transition: transform .3s;
+    cursor: pointer;
+}
+
+.faq__button::before{
+    display: inline-block;
+    content: url(../assets/svgs/chevron-down-solid.svg);
+    width: 3rem;
+    padding-top: 0.5rem;
+    background-color: #fff;
+}
+
+.faq--rotate{
+    transform: rotate(180deg);
+}
+
+.faq--hide{
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+
+    .faq__item {
+        margin: 2rem 4% 0 4%;
+    } 
 }
