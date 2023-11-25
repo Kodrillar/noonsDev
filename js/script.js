@@ -1,4 +1,29 @@
 /**
+ * This makes a request to get the
+ *  actual logo component from the
+ *  project's 'components' directory.
+ */
+
+function loadLogo() {
+  fetch("./components/logo.html", { method: "GET" }).then((response) =>
+    response.text().then(updateLogoElements)
+  );
+}
+
+/** This updates classes called 'logo' with
+ *  the actual logo component.
+ */
+
+function updateLogoElements(logoData) {
+  const logoElements = document.querySelectorAll(".logo");
+  const logoList = Array.from(logoElements).forEach(
+    (logo) => (logo.innerHTML = logoData)
+  );
+}
+
+loadLogo();
+
+/**
  * Navigation Dropdown
  */
 const navDropdownOptions = document.querySelector(".option").children;
