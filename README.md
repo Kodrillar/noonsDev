@@ -1,6 +1,6 @@
 # NoonsDev
 
-An imaginary technology bootcamp website.
+An imaginary technology bootcamp website. [Visit site]('https://kodrillar.github.io/noonsDev/')
 
 ## Getting Started
 
