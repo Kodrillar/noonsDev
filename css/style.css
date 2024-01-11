@@ -12,6 +12,7 @@
     --padding: 15px;
     --primary-color-light:#4358f521;
     --primary-color-light-100:#4358f50b;
+    --primary-color-light-600:#4358f5ac;
     --button-shadow: 0 0.5rem 3rem 0.2rem var(--accent-color);
     --font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --footer-bg-color: #4358f510;
@@ -283,6 +284,15 @@ h3{
     margin-bottom: 2rem;
  }
 
+
+ .dropdown__subtitle{
+    transition: color .2s;
+ }
+
+  .dropdown__item:hover .dropdown__subtitle{
+    color: var(--primary-color-light-600);
+ }
+
  .dropdown__image{
     border-radius: 1.5rem ;
     width: 5.5rem; 
@@ -338,6 +348,7 @@ h3{
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1024px) {
@@ -848,6 +859,56 @@ h3{
         margin: 2rem 4% 0 4%;
     } 
 }
+
+
+/* --------------------------------------------------- */
+/* ------------------ MOBILE DRAWER ------------------ */
+/* --------------------------------------------------- */
+
+.drawer{
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+    background-color: var(--solid-light-color);
+    border-bottom: 2px solid var(--primary-color-light);
+    box-shadow: 0 1rem 4rem .7rem var(--primary-color-light) ;
+    top: 0;
+    transition: .45s;
+
+ }
+
+ .drawer--hide{
+    z-index: -999;
+    opacity: 0;
+ }
+
+ .drawer__header{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 2rem;
+    margin-top: 1.8rem;
+    color: var(--primary-color);
+ }
+
+ .drawer__close-text{
+    cursor: pointer;
+    text-transform: uppercase;
+ }
+
+
+ .drawer__children{
+    max-width: 38rem;
+ }
+
+ .drawer__title{
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+ }
+
+ .drawer__item{
+    margin-bottom: 3rem;
+ }
 
 
 /* --------------------------------------------------- */

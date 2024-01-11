@@ -10,6 +10,25 @@ function loadLogo() {
   );
 }
 
+function addDrawerClickHandler() {
+  document
+    .querySelector(".icon-container")
+    .addEventListener("click", toggleDrawerVisibility);
+}
+
+function addDrawerCloseButtonHandler() {
+  document
+    .querySelector(".drawer__close-text")
+    .addEventListener("click", toggleDrawerVisibility);
+}
+
+function toggleDrawerVisibility() {
+  document.querySelector(".drawer").classList.toggle("drawer--hide");
+}
+
+addDrawerClickHandler();
+addDrawerCloseButtonHandler();
+
 /** This updates classes called 'logo' with
  *  the actual logo component.
  */
